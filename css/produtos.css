@@ -1,0 +1,40 @@
+.produtos-container {
+    padding: 32px;
+}
+
+.produtos-titulo {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-style: italic;
+    margin: 0 0 15px;
+    color: #FFFDD0;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.produto {
+    border: 1px solid #4b2c20;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.produto img {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.produtos-subtitulo {
+    color: #FFFDD0;
+    font-weight: 700;
+}
+
+.produtos-preco,
+.produtos-descricao {
+    color: #FFFDD0;
+    margin-top: 16px;
+}

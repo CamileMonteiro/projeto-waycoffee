@@ -1,0 +1,456 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: 0.2 linear;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background-color: #855B32;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+header {
+    background: #855B32;
+    /*ou 4b2c20*/
+    width: 100%;
+    /* position: fixed;  */
+    z-index: 5;
+}
+
+header .navbar {
+    display: flex;
+    padding: 20px 40px;
+    /*isso fez a diferença */
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .nav-logo .logo-text {
+    color: #fff;
+}
+
+.navbar .nav-menu {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-link {
+    padding: 10px 18px;
+    color: #fff;
+}
+
+.nav-link:hover {
+    color: #d3ad7f;
+    border-bottom: 0.1rem solid #d3ad7f;
+    /*é a linha*/
+    padding-bottom: 0.5rem;
+    font-size: 1.1rem;
+
+}
+
+.nav-link.ativo {
+    color: #d3ad7f;
+    border-bottom: 0.1rem solid #d3ad7f;
+    padding-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+
+
+/*Home-Section*/
+
+
+
+.Home-section .section-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    min-height: 100vh;
+    padding: 0 20px;
+    color: #f5f5dc
+}
+
+.Home-section .hero-detalhes {
+    flex: 1;
+}
+
+.Home-section .hero-detalhes .titulo {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    /* Negrito */
+    font-size: 3rem;
+    color: #FFFDD0;
+    line-height: 1.2;
+
+}
+
+.Home-section .hero-detalhes .subtitulo {
+    font-weight: 400;
+    /* Regular */
+    margin-top: 8px;
+    max-width: 80%;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.Home-section .hero-detalhes .descricao {
+    max-width: 70%;
+    margin: 24px 0 40px;
+    font-size: 1.2rem;
+    text-align: justify;
+
+}
+
+.Home-section .hero-detalhes .buttons {
+    display: flex;
+    gap: 23px;
+}
+
+.Home-section .hero-detalhes .button {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    color: #f5f5dc;
+    background: #4b2c20;
+    transition: 0.3s ease;
+}
+
+.Home-section .hero-detalhes .button:hover {
+    color: #fff;
+    border-color: #fff;
+    background: transparent;
+}
+
+.Home-section .hero-image-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Home-section .hero-image {
+    width: 80%;
+    height: auto;
+}
+
+/*Home-banner*/
+
+.section-cardapio {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 60px;
+    background-color: #4b2c20;
+    color: #fff;
+    padding: 10px 10px;
+
+}
+
+.main-image img {
+    margin-left: 40px;
+    max-width: 400px;
+    height: auto;
+}
+
+.link-cardapio .banner-titulo {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-style: italic;
+    margin: 0 0 15px;
+    color: #FFFDD0;
+}
+
+.link-cardapio {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    /* botão abaixo do título */
+    align-items: center;
+    color: #fff;
+}
+
+.section-cardapio .banner-link-cardapio {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    color: #f5f5dc;
+    background: #855B32;
+    transition: 0.3s ease;
+
+}
+
+.section-cardapio .banner-link-cardapio:hover {
+    color: #fff;
+    border-color: #fff;
+    background: transparent;
+
+}
+
+.section-equipe {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 60px;
+    background-color: #4b2c20;
+    color: #fff;
+    padding: 10px 10px;
+    margin: 20px 0;
+}
+
+.equipe-image img {
+    margin-left: 40px;
+    max-width: 400px;
+    height: auto;
+}
+
+.link-sobrenos .sobrenos-titulo {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-style: italic;
+    margin: 0 0 15px;
+    color: #FFFDD0;
+}
+
+.link-sobrenos {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+.sobre-nos-link {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    color: #f5f5dc;
+    background: #855B32;
+    transition: 0.3s ease;
+}
+
+.section-equipe .sobre-nos-link:hover {
+    color: #fff;
+    border-color: #fff;
+    background: transparent;
+}
+
+.footer {
+    background-color: #4b2c20;
+    /* Marrom escuro do tema Way Coffee */
+    color: #f5f5dc;
+    /* Um bege claro para o texto */
+    padding: 60px 20px 20px 20px;
+    font-family: 'Lato', sans-serif;
+    /* Use uma fonte limpa */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* Permite que as colunas quebrem em telas menores */
+    max-width: 1200px;
+    margin: 0 auto;
+    /* Centraliza o conteúdo */
+    gap: 40px;
+    /* Espaço entre as colunas */
+    align-items: flex-start;
+}
+
+.footer-column {
+    flex: 1;
+    /* Permite que as colunas cresçam igualmente */
+    min-width: 250px;
+    /* Largura mínima antes de quebrar a linha */
+    margin-top: 0;
+}
+
+.footer-titulo {
+    font-family: 'Playfair Display', serif;
+    /* Fonte elegante para os títulos */
+    font-size: 1.5rem;
+    color: #FFFDD0;
+    /* Cor de destaque dos títulos */
+    margin-bottom: 20px;
+    font-style: italic;
+    margin-top: 0;
+}
+
+.footer-column p {
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+/* Estilos para a lista de links */
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li a {
+    color: #f5f5dc;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #FFFDD0;
+    /* Destaque ao passar o mouse */
+}
+
+/* Estilos do formulário de Newsletter */
+.newsletter-form {
+    display: flex;
+    gap: 10px;
+}
+
+.newsletter-form input {
+    flex-grow: 1;
+    border: 1px solid #855B32;
+    background-color: #f5f5dc;
+    padding: 10px;
+    border-radius: 5px;
+    color: #4b2c20;
+}
+
+.newsletter-form button {
+    background-color: #855B32;
+    /* Marrom do botão */
+    color: #f5f5dc;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: #6a4827;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+    /* Efeito de zoom */
+}
+
+/* Barra inferior do rodapé */
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #6a4827;
+    /* Linha sutil de separação */
+    padding-top: 20px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+.footer-bottom .legal-links a {
+    color: #f5f5dc;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-bottom .legal-links a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        /* Empilha as colunas */
+        align-items: center;
+        /* Centraliza as colunas */
+        text-align: center;
+    }
+
+    .footer-column {
+        min-width: 100%;
+        /* Colunas ocupam toda a largura */
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+        /* Empilha o input e o botão */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #855B32;
+    padding: 2rem;
+    text-align: center;
+}
+
+.paragrafo-footer {
+    color: #f4f0ea;
+}
+
+footer a {
+    text-decoration: none;
+    color: #ccd595;
+}

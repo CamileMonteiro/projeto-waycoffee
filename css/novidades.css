@@ -1,0 +1,80 @@
+/* Container principal (era .produtos-container) */
+.novidades-container {
+    padding: 32px;
+}
+
+.novidades-titulo {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-style: italic;
+    margin: 0 0 15px;
+    color: #FFFDD0;
+}
+
+
+/* O grid que agrupa as notícias (era .produtos) */
+.lista-novidades {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+/* --- ESTILOS DO CARD --- */
+
+/* O card externo (era .produto), agora só com borda e espaçamento */
+.noticia-card {
+    border: 1px solid #4b2c20;
+    border-radius: 8px;
+    /* O padding foi movido para .noticia-corpo */
+}
+
+/* O conteúdo interno do card, que agora recebe o padding */
+.noticia-corpo {
+    padding: 16px;
+}
+
+/* --- CONTEÚDO DENTRO DO CARD --- */
+
+/* O título de cada notícia (era .produtos-subtitulo) */
+.noticia-titulo {
+    color: #FFFDD0;
+    font-weight: 700;
+    /* Resetando margem do h5 para controlar o espaço */
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+/* Estilos para o texto da descrição e da data */
+/* (agrupados como era .produtos-preco e .produtos-descricao) */
+.noticia-descricao,
+.noticia-data {
+    color: #FFFDD0;
+    margin-top: 16px;
+    margin-bottom: 0;
+    /* Evita espaçamento extra do parágrafo */
+}
+
+
+.noticia-data {
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+
+.aviso {
+    color: #FFFDD0;
+    padding: 16px;
+    border: 1px solid #4b2c20;
+    border-radius: 8px;
+    text-align: center;
+
+}
+
+.noticia-img {
+    display: block;
+    margin: 10px;
+    max-width: 50%;
+    border-radius: 20px;
+    width: 300px;
+    height: 200px;
+}
